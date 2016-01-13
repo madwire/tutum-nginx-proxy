@@ -21,22 +21,6 @@ CLIENT_URL = URI.escape("wss://stream.tutum.co/v1/events?auth=#{ENV['TUTUM_AUTH'
 LOGGER = Logger.new($stdout)
 LOGGER.level = Logger::INFO
 
-# PATCH
-class Tutum
-  attr_reader :tutum_auth
-  def initialize(options = {})
-    @tutum_auth = options[:tutum_auth]
-  end
-  def headers
-    {
-      'Authorization' => @tutum_auth,
-      'Accept' => 'application/json',
-      'Content-Type' => 'application/json'
-    }
-  end
-end
-
-
 class NginxConf
 
   TEMPLATE = File.open("./nginx.conf.erb", "r").read

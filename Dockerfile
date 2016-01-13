@@ -1,4 +1,4 @@
-FROM nginx:1.9.0
+FROM nginx:1.9.9
 MAINTAINER Richard Adams richard@madwire.co.uk
 
 # Install wget and install/updates certificates

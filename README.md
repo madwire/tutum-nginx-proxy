@@ -1,3 +1,4 @@
+#### Head over to [madwire/dockercloud-nginx-proxy](https://github.com/madwire/dockercloud-nginx-proxy) for a Docker Cloud compatible version 
 # tutum-nginx-proxy
 
 tutum-nginx-proxy sets up a container running nginx and, when launched in Tutum, will automatically reconfigures itself when any web service has finished Scaling, Redeploying, Starting, Stopping or Terminating. The best part is that any web service that has a VIRTUAL_HOST Environment variable and is listening on port 80 (internally) will automatically be picked up so no need to link containers.
